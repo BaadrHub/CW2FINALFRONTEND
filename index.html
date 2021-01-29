@@ -34,7 +34,7 @@
                 <p>Space: {{lesson.spaces}}</p>
 
                 <!--Render Image Element-->
-                <img :src="'/image/'+lesson.image" :alt="lesson.subject" height="200px"
+                <img :src="'https://baadr-cw2.herokuapp.com//image/'+lesson.image" :alt="lesson.subject" height="200px"
                     width="200px" />
 
                 <!--V-if to conditionally render a block-->
@@ -97,7 +97,6 @@
                 },
                 formsubmit(e) {
                     e.preventDefault();
-                    console.log('form submit')
                 },
                 showAddProductForm() {
                     this.showaddproductform = true
