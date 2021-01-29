@@ -89,7 +89,7 @@
             },
             methods: {
                 fetch_Products() {
-                    fetch("/lessons")
+                    fetch("https://baadr-cw2.herokuapp.com/lessons")
                         .then((response) => response.json())
                         .then((resp) => {
                             this.lessons = resp;
