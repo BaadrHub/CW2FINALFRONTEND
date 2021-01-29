@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- <script src="Javascript/lessons.js"></script> -->
     <title>Coursework 1</title>
 </head>
 
@@ -23,7 +22,6 @@
             <button type="button" v-if="showShoppingCart" @click="showCheckout">Checkout ({{ itemsInCart }})</button>
             <button id="buttonascending" type="button" v-on:click="ascending">Sort Price Ascending</button>
             <button id="buttondecending" type="button" v-on:click="descending">Sort Price Descending</button>
-
             <div id="attributescolour" v-for="(lesson, index) in lessons" :key="index">
                 <!--Display Subject Array-->
                 <p>Subject: {{lesson.topic}}</p>
