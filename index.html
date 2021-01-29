@@ -161,7 +161,7 @@
                                     body: JSON.stringify({ lesson: obj.lesson }) // We send data in JSON format
                                 }
                                 // make the HTTP put request using fetch api
-                                fetch("/updatelesson", putMethod)
+                                fetch("https://baadr-cw2.herokuapp.com//updatelesson", putMethod)
                                     .then(response => response.json())
                                     .then(data => {
                                         console.log(data)
